@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Love for You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* Vibrant Stylish Background */
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fcb69f, #ffdde1);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #6b4f98;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Gradient Animation */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 4rem;
+      color: #ff1a75;
+      margin-top: 50px;
+      text-shadow: 3px 3px 8px rgba(255,255,255,0.8);
+      animation: fadeIn 2s ease-out;
+    }
+
+    /* Love Letter Container */
+    .content {
+      background: rgba(255, 240, 250, 0.95);
+      padding: 40px;
+      border-radius: 20px;
+      width: 80%;
+      margin: 30px auto;
+      box-shadow: 0 10px 40px rgba(255, 105, 180, 0.5);
+      font-family: 'Dancing Script', cursive;
+      animation: fadeIn 2s ease-out;
+      border: 3px solid #ff99cc;
+    }
+
+    .kitty {
+      width: 200px;
+      margin: 20px;
+      animation: bounce 2s ease infinite;
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: #ff0066;
+      animation: pulse 1.5s infinite;
+      margin-top: 10px;
+    }
+
+    .letter-text {
+      font-size: 1.3rem;
+      color: #ff4f94;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      animation: fadeInText 2s ease-out;
+    }
+
+    .btn {
+      background-color: #ff3385;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: popUp 0.5s ease-out;
+    }
+    .btn:hover {
+      background-color: #e60073;
+      transform: scale(1.1);
+      box-shadow: 0 5px 20px rgba(255, 51, 133, 0.5);
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popUp {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>To My Sweetheart 💖</h1>
+
+  <div class="content">
+    <img src="D.jpg" alt="Hello Kitty" class="kitty">
+    
+    <p class="letter-text">My dearest Madam Jii...💝</p>
+    
+    <p class="letter-text">
+      Every time I think of you, my heart skips a beat.  
+      You are my sunshine, my happiness, and the one who makes everything brighter.  
+    </p>
+    
+    <p class="letter-text">
+      With every moment, my love for you grows stronger.  
+      I promise to always cherish and adore you with all that I am.  
+    </p>
+    
+    <div class="heart">💓</div>
+    
+    <button class="btn" onclick="window.location.href='loveletter.html'">Click to Reveal My Heart</button>
+  </div>
+
+</body>
+</html>
